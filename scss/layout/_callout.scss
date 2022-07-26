@@ -1,0 +1,28 @@
+.callout {
+  background-color: lighten($color: hsl(12, 88%, 59%), $amount: 1%);
+  background-image: url(/images/bg-simplify-section-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.callout-header {
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.callout-btn {
+  margin: 1rem auto 4rem;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin: 1rem auto;
+  }
+
+  button {
+    background-color: white;
+    color: hsl(12, 88%, 59%);
+  }
+}

@@ -269,6 +269,35 @@ body {
   margin-bottom: 2rem;
 }
 
+.callout {
+  background-color: #f3633f;
+  background-image: url(/bg-simplify-section-desktop.d2c5e32f.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.callout-header {
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.callout-btn {
+  margin: 1rem auto 4rem;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .callout-btn {
+    margin: 1rem auto;
+  }
+}
+.callout-btn button {
+  background-color: white;
+  color: hsl(12deg, 88%, 59%);
+}
+
 .clr-neutral-light {
   color: white;
 }
