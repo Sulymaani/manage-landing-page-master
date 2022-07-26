@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Be Vietnam Pro';
+  background-image: url(/images/bg-simplify-section-mobile.svg);
+}
+
+.navbar {
+  margin: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(228, 39%, 23%);
+}
+
+.brand-title {
+  display: flex;
+  font-size: 1.5rem;
+  margin: .5rem 0;
+}
+
+
+
+.navbar-links ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+  
+.navbar-links li {
+  list-style-type: none;
+}
+
+.navbar-links li a {
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  color: hsl(228, 39%, 23%);
+  display: block;
+  padding: 1rem;
+}
+
+
+
+.toggle-button {
+  background-image: url(/images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: center;
+  position: absolute;
+  right: 1rem;
+  top: .3rem;;  
+  display: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 880px) {
+
+    body {
+      height: 200vh;
+      background-image: url(/images/bg-simplify-section-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .navbar {
+      margin: 1.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-btn {
+      display: none;
+    }
+  
+    .toggle-button {
+      display: flex;
+      margin: 1.5rem;
+    }
+
+    .navbar-links {
+      background-color: white;
+      display: none;
+      width: 95%;
+      margin: 2rem auto;
+      border-radius: 6px;
+      box-shadow: 10px 20px 100px 10px #888
+    }
+
+    .navbar-links ul {
+      width: 100%;
+      margin: 1rem 0;
+      flex-direction: column;
+    }
+
+    .navbar-links ul li {
+      text-align: center;
+      margin: .6rem 0;
+    }
+
+    .navbar-links ul li:nth-child(1) {
+      margin-top: 1.5rem;
+    }
+
+    .navbar-links ul li:nth-child(5) {
+      margin-bottom: 1.5rem;
+    }
+
+    .navbar-links li a {
+      padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+      display: flex;
+
+    }
+
+}
