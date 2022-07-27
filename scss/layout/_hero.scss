@@ -1,3 +1,12 @@
+.hero {
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 2rem;
+  }
+    
+}
+
+
 .hero-content {
   padding: 2rem;
   gap: 4rem;

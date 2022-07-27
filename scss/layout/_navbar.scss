@@ -13,12 +13,22 @@ body {
   justify-content: space-between;
   align-items: center;
   color: hsl(228, 39%, 23%);
+
+  @media (min-width: 768px) {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
 }
 
 .brand-title {
   display: flex;
   font-size: 1.5rem;
   margin: .5rem 0;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 1.5rem;
+  }
+    
 }
 
 
@@ -61,14 +71,6 @@ body {
 
 @media screen and (max-width: 880px) {
 
-    body {
-      height: 200vh;
-      background-image: url(/images/bg-simplify-section-desktop.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    
     .navbar {
       margin: 1.5rem;
       flex-direction: column;
@@ -118,7 +120,6 @@ body {
 
     .navbar-links.active {
       display: flex;
-
     }
 
 }

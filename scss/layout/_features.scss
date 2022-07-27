@@ -1,4 +1,9 @@
+.features {
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 2rem;
+  }
+}
 
 .features-content {
   padding: 1rem;
@@ -30,17 +35,19 @@
   margin-top: .5rem;
 
   .features-item {
-    padding: .4rem 4.9rem;
     width: 100%;
+    padding: .6rem 1.8rem;
     margin-bottom: .5rem;
     list-style-type: none;
     position: relative;
-    background-color: lighten($color: hsl(12, 88%, 59%), $amount: 30%);
+    left: 2.1rem;
+    background-color: lighten($color: hsl(12, 88%, 59%), $amount: 35%);
     border-radius: 20px;
 
     @media (min-width: 768px) {
       background-color: white;
       padding: 0;
+      margin-bottom: 1rem;
     }
   }
 
@@ -49,16 +56,16 @@
     counter-increment: counter-name;
     display: inline;
     position: absolute;
-    top: 0.01rem;
-    left: -.2rem;
+    top: -0.10rem;
+    left: -2.7rem;
     background-color: hsl(12, 88%, 59%);
     color: white;
-    padding: .6em 1.8rem;
+    padding: .9em 1.8rem;
     border-radius: 25px;
 
     @media (min-width: 768px) {
-      left: -5rem;
-      top: -.2rem;
+      left: -4.7rem;
+      top: -.5rem;
     }
   }
 
